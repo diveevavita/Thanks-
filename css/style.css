@@ -1,0 +1,240 @@
+body {
+	display: block;
+	margin: 0px;
+	min-width: 320px;
+}
+
+@font-face {
+	font-family: "Roboto Regular"; 
+	src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+	font-family: "Roboto Medium"; 
+	src: url(../fonts/Roboto-Medium.ttf);
+}
+
+@font-face {
+	font-family: "Roboto Bold"; 
+	src: url(../fonts/Roboto-Bold.ttf);
+}
+
+body {
+	overflow-x: hidden;
+	min-width: 320px;
+	width: 100%;
+	height: 100%;
+	color: #000;
+	font-size: 12px;
+	font-family: 'Arial',sans-serif;
+	padding: 0;
+	margin: 0;
+	background: #f6f6f6;
+	-webkit-tap-highlight-color: transparent;
+}
+
+.page {
+	position: relative;
+	z-index: 1;
+	font-family: Roboto, sans-serif;
+	font-size: 14px;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	-moz-osx-font-smoothing: grayscale;
+	-moz-font-feature-settings: liga, kern;
+	background: #fff;
+	color: #333333;
+	min-width: 320px;
+	height: 100vh;
+}
+
+.page {
+	box-sizing: border-box;
+}
+
+.page__content {
+	padding: 16px 0;
+}
+
+.container {
+	display: block;
+	width: 1400px;
+	margin: 0 auto;
+	padding: 0 20px;
+	max-width: 100%;
+	box-sizing: border-box;
+}
+
+.container__content {
+	position: relative;
+	z-index: 999;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	padding: 0 0 100px;
+}
+
+.container__content {
+	padding-bottom: 10px !important;
+}
+
+.card-form {
+	display: block;
+	width: 663px;
+	margin: 20px auto;
+	border: 1px solid;
+	border-color: #EAEAEA;
+	background-color: #ffffff;
+}
+
+.logo {
+	margin: 30px auto 20px 30px;
+}
+
+.name_card {
+	font-size: 26px;
+	list-style: none;
+	font-family: "Roboto Regular";
+	font-weight: 400;
+	line-height: 140%;
+	margin: 0 auto;
+	text-align: center;
+	color: #FF0000;
+	margin-bottom: 30px;
+}
+
+.close_butt {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+}
+
+.close_butt div {
+    cursor: pointer;
+    position: relative;  
+    height: 50px;
+    width: 50px;
+}
+
+.close_butt .lt-rt {
+    height: 4px;
+    width: 50px;
+    position: absolute;
+    margin-top: 24px;
+    background-color: #337AB7;
+    border-radius: 2px;
+    transform: rotate(45deg);
+    transition: all .3s ease-in;
+}
+
+.close_butt .rt-lt {
+    height: 4px;
+    width: 50px;
+    position: absolute;
+    margin-top: 24px;
+    background-color: #337AB7;
+    border-radius: 2px;
+    transform: rotate(-45deg);
+    transition: all .3s ease-in;
+}
+
+.close_butt div:hover .lt-rt {
+    transform: rotate(-45deg);
+    background-color: #000;
+}
+
+.close_butt div:hover .rt-lt {
+    transform: rotate(45deg);
+    background-color: #000;
+}
+
+.close_butt div:active .lt-rt {
+    transform: rotate(-45deg);
+    background-color: #000;
+}
+
+.close_butt div:active .rt-lt {
+    transform: rotate(45deg);
+    background-color: #000;
+}
+
+.top {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+input[type="number"]:hover,
+input[type="number"]:focus {
+  -moz-appearance: number-input;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.card-form_content {
+	display: flex;
+	flex-direction: column;
+	margin: 50px auto 0;
+	width: 60%;
+	text-align: center;
+}
+
+.card-form_content-thanks {
+	font-family: "Roboto Regular";
+    color: #000000;
+    font-size: 38px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 120%;
+    margin: 0;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.text_ex {
+	color: #F44336;
+    margin: 0;
+}
+
+.card-form_content-welcome {
+	font-family: "Roboto Bold";
+    color: #000000;
+    font-size: 38px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 120%;
+    margin: 0;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.line {
+	margin-right: 0;
+    margin-left: auto;
+}
+
+.card_icon {
+	position: absolute;
+	z-index: 5;
+	bottom: 190px;
+    left: 35%;
+}
