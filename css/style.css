@@ -349,7 +349,7 @@ input[type=number]::-webkit-outer-spin-button {
 	}
 }
 
-@media (min-width: 300px) and (max-width: 355px) {
+@media (max-width: 355px) {
 
 	.card_icon {
 		position: relative;
